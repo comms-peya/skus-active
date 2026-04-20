@@ -1,29 +1,47 @@
-
 <html>
 <head>
 <meta charset="UTF-8">
 <style>
-body{font-family:Arial;padding:40px;}
-table{border-collapse:collapse;width:700px;}
-th{background:#eeeeee;padding:10px;text-align:left;}
-td{padding:8px;border-bottom:1px solid #ddd;}
+  body{font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding:40px; color:#333; line-height:1.5;}
+  .header{border-bottom:4px solid #e02b2b; padding-bottom:15px; margin-bottom:25px;}
+  .meta-container{display:flex; justify-content:space-between; background:#f8f9fa; padding:20px; border-radius:8px; margin-bottom:30px; border:1px solid #eee;}
+  table{border-collapse:collapse; width:100%; font-size:12px; margin-top:10px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);}
+  th{background:#333; color:white; padding:12px 10px; text-align:left;}
+  td{padding:10px; border:1px solid #eee;}
+  tr:nth-child(even){background:#fafafa;}
+  h3{color:#e02b2b; font-size:18px; margin-bottom:5px;}
+  .description{font-size:14px; color:#666; margin-bottom:20px;}
 </style>
 </head>
 <body>
 
+<div class="header">
+  <h1 style="margin:0;">Reporte de Recuperación de Catálogo</h1>
+  <p style="margin:5px 0 0 0; color:#666;">STANDARD_SKUS - <b>Estado: Caída de Productos Activos</b></p>
+</div>
 
-<p><b>Partner ID:</b> 491752</p>
-<p><b>Alert date:</b> 2026-04-20</p>
+<div class="meta-container">
+  <div>
+    <p><b>Partner ID:</b> 491752</p>
+    <p><b>Fecha de Alerta:</b> 2026-04-20</p>
+  </div>
+</div>
 
-<p>Estos son los productos que tuviste activos el mes pasado y hoy no tienes activos:</p>
-
-<table>
-<tr>
-<th>Barcode</th>
-<th>Product Name</th>
-</tr>
-<tr><td>02850200331019</td><td>Alitas De Pollo 1 kg</td></tr><tr><td></td><td>Alitas De Pollo 5 kg</td></tr><tr><td>07792006000124</td><td>Arroz Tio Carlos Largo Fino 1 kg</td></tr><tr><td></td><td>Cuarto Trasero Casero 1 kg</td></tr><tr><td>02850200136010</td><td>Cuarto Trasero De Pollo 1 kg</td></tr><tr><td>07622201682026</td><td>Jugo Clight En Polvo Limonada Rosada 8 g</td></tr><tr><td>07790070507341</td><td>Jugo De Lim?n Minerva 500 ml</td></tr><tr><td>07622201745967</td><td>Jugo En Polvo Anan? Tang 15 g</td></tr><tr><td>07622201703110</td><td>Jugo En Polvo Clight Clight Naranja 8 g</td></tr><tr><td>07794000006065</td><td>Mayonesa Hellmann's Cl?sica Sin Tacc Doypack 237 g</td></tr><tr><td>02850200979006</td><td>Menudo De Pollo 1 kg</td></tr><tr><td></td><td>Menudos 5 kg</td></tr><tr><td>08445290367327</td><td>Pure De Papas Maggi Cremoso 125 g</td></tr><tr><td>07790580138851</td><td>Pure De Tomate Noel 520 g</td></tr><tr><td>07792882000201</td><td>Queso Rallado La Quesera 40 G</td></tr><tr><td>07790742222909</td><td>Queso Rallado La Seren?sima 35 g</td></tr><tr><td>07790150432433</td><td>Sabor En Polvo Alicante Gallina 7.5 g</td></tr><tr><td>07794000003583</td><td>Salsa Hellmann's Barbacoa 250 g</td></tr>
-</table>
+<div class="section">
+  <h3>Productos Detectados como Apagados</h3>
+  <p class="description">Identificamos que los siguientes productos estaban activos en tu catálogo y actualmente se encuentran desactivados. Te recomendamos reactivarlos para no perder ventas:</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Barcode</th>
+        <th>Nombre del Producto</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>02850200331019</td><td>Alitas De Pollo 1 kg</td></tr><tr><td></td><td>Alitas De Pollo 5 kg</td></tr><tr><td>07792006000124</td><td>Arroz Tio Carlos Largo Fino 1 kg</td></tr><tr><td></td><td>Cuarto Trasero Casero 1 kg</td></tr><tr><td>02850200136010</td><td>Cuarto Trasero De Pollo 1 kg</td></tr><tr><td>07622201682026</td><td>Jugo Clight En Polvo Limonada Rosada 8 g</td></tr><tr><td>07790070507341</td><td>Jugo De Limón Minerva 500 ml</td></tr><tr><td>07622201745967</td><td>Jugo En Polvo Ananá Tang 15 g</td></tr><tr><td>07622201703110</td><td>Jugo En Polvo Clight Clight Naranja 8 g</td></tr><tr><td>07622201703141</td><td>Jugo En Polvo Clight Naranja Dulce Vitamina C+D 7.5 g</td></tr><tr><td></td><td>Lomito De Suprema 1 kg</td></tr><tr><td>07794000006065</td><td>Mayonesa Hellmann's Clásica Sin Tacc Doypack 237 g</td></tr><tr><td>02850200979006</td><td>Menudo De Pollo 1 kg</td></tr><tr><td></td><td>Menudos 5 kg</td></tr><tr><td>08445290367327</td><td>Pure De Papas Maggi Cremoso 125 g</td></tr><tr><td>07790580138851</td><td>Pure De Tomate Noel 520 g</td></tr><tr><td>07792882000201</td><td>Queso Rallado La Quesera 40 G</td></tr><tr><td>07790742222909</td><td>Queso Rallado La Serenísima 35 g</td></tr><tr><td>07790150432433</td><td>Sabor En Polvo Alicante Gallina 7.5 g</td></tr><tr><td>07794000003583</td><td>Salsa Hellmann's Barbacoa 250 g</td></tr>
+    </tbody>
+  </table>
+</div>
 
 </body>
 </html>
