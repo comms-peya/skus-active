@@ -1,29 +1,47 @@
-
 <html>
 <head>
 <meta charset="UTF-8">
 <style>
-body{font-family:Arial;padding:40px;}
-table{border-collapse:collapse;width:700px;}
-th{background:#eeeeee;padding:10px;text-align:left;}
-td{padding:8px;border-bottom:1px solid #ddd;}
+  body{font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding:40px; color:#333; line-height:1.5;}
+  .header{border-bottom:4px solid #e02b2b; padding-bottom:15px; margin-bottom:25px;}
+  .meta-container{display:flex; justify-content:space-between; background:#f8f9fa; padding:20px; border-radius:8px; margin-bottom:30px; border:1px solid #eee;}
+  table{border-collapse:collapse; width:100%; font-size:12px; margin-top:10px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);}
+  th{background:#333; color:white; padding:12px 10px; text-align:left;}
+  td{padding:10px; border:1px solid #eee;}
+  tr:nth-child(even){background:#fafafa;}
+  h3{color:#e02b2b; font-size:18px; margin-bottom:5px;}
+  .description{font-size:14px; color:#666; margin-bottom:20px;}
 </style>
 </head>
 <body>
 
+<div class="header">
+  <h1 style="margin:0;">Reporte de Recuperación de Catálogo</h1>
+  <p style="margin:5px 0 0 0; color:#666;">STANDARD_SKUS - <b>Estado: Caída de Productos Activos</b></p>
+</div>
 
-<p><b>Partner ID:</b> 576890</p>
-<p><b>Alert date:</b> 2026-04-20</p>
+<div class="meta-container">
+  <div>
+    <p><b>Partner ID:</b> 576890</p>
+    <p><b>Fecha de Alerta:</b> 2026-04-20</p>
+  </div>
+</div>
 
-<p>Estos son los productos que tuviste activos el mes pasado y hoy no tienes activos:</p>
-
-<table>
-<tr>
-<th>Barcode</th>
-<th>Product Name</th>
-</tr>
-<tr><td>07798255730010</td><td>Aderezo Onneg Babaganush x 220 g</td></tr><tr><td>07798255730317</td><td>Aderezo Onneg Hummus 85 g</td></tr><tr><td>07798255730065</td><td>Aderezo Onneg Just Hummus x 220 g</td></tr><tr><td>07798255730300</td><td>Aderezo Onneg babaganush - 85grs</td></tr><tr><td>02851404892030</td><td>Aj?  Molido</td></tr><tr><td>00727373150148</td><td>Alfajor Felices Las Vacas Blanco Membrillo 60 g</td></tr><tr><td>07790495005644</td><td>Az?car De Ca?a Yin Yang Org?nico 1 kg</td></tr><tr><td>07791337007918</td><td>Bebida A Base De Almendras Silk Sin Az?car 1 L</td></tr><tr><td>02851404877037</td><td>Bicarbonato De Sodio</td></tr><tr><td>07798008295650</td><td>Blend De Hierbas Saint Gottard Tisana Diabetes 20 Unidades</td></tr><tr><td>02851404888033</td><td>Blend De Pimienta</td></tr><tr><td>07798342730619</td><td>Bu?uelos Congelados Amoedo De Arroz Yamani, Acelga Y Calabaza 300 g</td></tr><tr><td>07798342730466</td><td>Bu?uelos De Acelga Y Queso Congelados Amoedo (50 g) 6 Unidades</td></tr><tr><td>02851404925035</td><td>Caf?  Ba?ados Con Chocolate</td></tr><tr><td>02851404854038</td><td>Caj? Tostado Con Sal</td></tr><tr><td>02851404849034</td><td>Caj? Tostado Sin Sal</td></tr><tr><td>02851404900032</td><td>Cebolla  En Polvo</td></tr><tr><td>00720665924427</td><td>Cheddar Vegano Felices Las Vacas En Fetas 200 g</td></tr><tr><td>02851404911038</td><td>Clavo De Olor  Molido</td></tr><tr><td>02851404870038</td><td>Damascos Turcos N?4</td></tr><tr><td>07790538009561</td><td>Galletas De Arroz Arrocitas Con Sal 101 g</td></tr><tr><td>02851404861036</td><td>Higos Negros</td></tr><tr><td>02851404905037</td><td>Jengibre  En Ra?z</td></tr><tr><td>02851404847030</td><td>Man? Tostado Sin Sal</td></tr><tr><td>00724751034410</td><td>Medallon A Base De Soja Felices Las Vacas Sabor Carne Big Classic 230 g</td></tr><tr><td>02851404898032</td><td>Merken</td></tr><tr><td>07798088960370</td><td>Mermelada De Frutos Rojos El Brocal 400 g</td></tr><tr><td>07798088960325</td><td>Mermelada El Brocal Frutilla Light 400 g</td></tr><tr><td>07798342151520</td><td>Milanesa NotMeat Carne 220 g</td></tr><tr><td>02851404844039</td><td>Mix Europeo</td></tr><tr><td>02851404864037</td><td>Mix Frutado</td></tr><tr><td>02851404855035</td><td>Mix Nacional</td></tr><tr><td>02851404865034</td><td>Nuez Con C?scara</td></tr><tr><td>01000010905103</td><td>Nuez Moscada Unidad</td></tr><tr><td>07798342151124</td><td>Nuggets Not Chicken 300 g</td></tr><tr><td>02851404881034</td><td>Or?gano</td></tr><tr><td>07798378750032</td><td>Pochoclo Org?nico Sweet & Salty Bamboo 80 g</td></tr><tr><td>02851404885032</td><td>Psyllium En Polvo</td></tr><tr><td>00763571763650</td><td>Queso Feteado Felices Las Vacas Danbo A Base De Almendras 150 g</td></tr><tr><td>07790495003886</td><td>Salvado De Avena Yin Yang 500 g</td></tr><tr><td>00754697507884</td><td>Smoothie De Mango-Maracuya Felices Las Vacas 500 Ml</td></tr><tr><td>00656750729212</td><td>Toques Tikka Casa Vegana 420 g</td></tr><tr><td>07798200050019</td><td>Tostaditas Crackines De Arroz 120 g</td></tr><tr><td>07798104307707</td><td>T? Chaman Chai Inti Zen (2 g) 15 Unidades</td></tr><tr><td>07798104308544</td><td>T? Inti Zen Dulce Manzanilla 15 Units</td></tr><tr><td>07798104307301</td><td>T? Inti Zen En Saquitos Vainilla Miel Y Cacao De Patagonia Bee 15 Un</td></tr><tr><td>07798104308568</td><td>T? Inti Zen Golden Chai 15 Un</td></tr><tr><td>07798104308551</td><td>T? Inti Zen Tres Mentas (30 g), 15 Unidades</td></tr><tr><td>07798008291218</td><td>T? Saint Gottard En Saquitos T? Verde 20 Unidades</td></tr><tr><td>07730241003654</td><td>Yerba Canarias 1 kg</td></tr><tr><td>07798185200294</td><td>Yerba Mate Jesper Org?nica Con Hierbas Serranas 500 g</td></tr><tr><td>07798136870552</td><td>Yogur Dahi Firme Natural En Frasco 190 g</td></tr>
-</table>
+<div class="section">
+  <h3>Productos Detectados como Apagados</h3>
+  <p class="description">Identificamos que los siguientes productos estaban activos en tu catálogo y actualmente se encuentran desactivados. Te recomendamos reactivarlos para no perder ventas:</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Barcode</th>
+        <th>Nombre del Producto</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>00737186385880</td><td>Acondicionador Geranio 80 Gr</td></tr><tr><td>00736684288846</td><td>Acondicionador Sólido Sentida Botánica 100 g</td></tr><tr><td>07798255730010</td><td>Aderezo Onneg Babaganush x 220 g</td></tr><tr><td>07798255730317</td><td>Aderezo Onneg Hummus 85 g</td></tr><tr><td>07798255730065</td><td>Aderezo Onneg Just Hummus x 220 g</td></tr><tr><td>07798255730300</td><td>Aderezo Onneg babaganush - 85grs</td></tr><tr><td>02851404892030</td><td>Ají  Molido</td></tr><tr><td>00076625228600</td><td>Alfajor Celienergy Nuez Y Dulce De Leche 50 g</td></tr><tr><td>07794767000405</td><td>Alfajor Ceral Blanco 45 g</td></tr><tr><td>07794767000344</td><td>Alfajor Ceral Negro Light 45 g</td></tr><tr><td>00727373150148</td><td>Alfajor Felices Las Vacas Blanco Membrillo 60 g</td></tr><tr><td>07790495005644</td><td>Azúcar De Caña Yin Yang Orgánico 1 kg</td></tr><tr><td>07798343751040</td><td>Barra De Cereal Integra Semillas Y Arándanos 38 g</td></tr><tr><td>07798343751057</td><td>Barra Semillas Y Chocolate Integra Sin Tacc 38 g</td></tr><tr><td>07791337007918</td><td>Bebida A Base De Almendras Silk Sin Azúcar 1 L</td></tr><tr><td>02851404877037</td><td>Bicarbonato De Sodio</td></tr><tr><td>07798008295650</td><td>Blend De Hierbas Saint Gottard Tisana Diabetes 20 Unidades</td></tr><tr><td>02851404888033</td><td>Blend De Pimienta</td></tr><tr><td>07798342730619</td><td>Buñuelos Congelados Amoedo De Arroz Yamani, Acelga Y Calabaza 300 g</td></tr><tr><td>07798342730466</td><td>Buñuelos De Acelga Y Queso Congelados Amoedo (50 g) 6 Unidades</td></tr><tr><td>02851404925035</td><td>Café  Bañados Con Chocolate</td></tr><tr><td>02851404854038</td><td>Cajú Tostado Con Sal</td></tr><tr><td>02851404849034</td><td>Cajú Tostado Sin Sal</td></tr><tr><td>02851404900032</td><td>Cebolla  En Polvo</td></tr><tr><td>00720665924427</td><td>Cheddar Vegano Felices Las Vacas En Fetas 200 g</td></tr><tr><td>02851404911038</td><td>Clavo De Olor  Molido</td></tr><tr><td>02851404870038</td><td>Damascos Turcos Nº4</td></tr><tr><td>02851404851037</td><td>Datil Medjoul</td></tr><tr><td>07798143230264</td><td>Edulcorante Jual Stevia 125 ml</td></tr><tr><td>07790538009561</td><td>Galletas De Arroz Arrocitas Con Sal 101 g</td></tr><tr><td>02851404861036</td><td>Higos Negros</td></tr><tr><td>02851404905037</td><td>Jengibre  En Raíz</td></tr><tr><td>02851404887036</td><td>Jengibre Molido</td></tr><tr><td>07798121271432</td><td>Jugo Bebible Aloe Vera Natier Maximas Defensas 250 cm3</td></tr><tr><td>02851404847030</td><td>Maní Tostado Sin Sal</td></tr><tr><td>00724751034410</td><td>Medallon A Base De Soja Felices Las Vacas Sabor Carne Big Classic 230 g</td></tr><tr><td>02851404898032</td><td>Merken</td></tr><tr><td>07798088960332</td><td>Mermelada De Durazno El Brocal Light Por 400 g</td></tr><tr><td>07798088960370</td><td>Mermelada De Frutos Rojos El Brocal 400 g</td></tr><tr><td>07798088960325</td><td>Mermelada El Brocal Frutilla Light 400 g</td></tr><tr><td>07798165590230</td><td>Miel Beepure Clásica Premium 500 g</td></tr><tr><td>07798342151520</td><td>Milanesa NotMeat Carne 220 g</td></tr><tr><td>02851404844039</td><td>Mix Europeo</td></tr><tr><td>02851404864037</td><td>Mix Frutado</td></tr><tr><td>02851404855035</td><td>Mix Nacional</td></tr><tr><td>02851404865034</td><td>Nuez Con Cáscara</td></tr><tr><td>01000010905103</td><td>Nuez Moscada Unidad</td></tr><tr><td>07798342151124</td><td>Nuggets Not Chicken 300 g</td></tr><tr><td>02851404881034</td><td>Orégano</td></tr><tr><td>07798378750032</td><td>Pochoclo Orgánico Sweet & Salty Bamboo 80 g</td></tr><tr><td>02851404885032</td><td>Psyllium En Polvo</td></tr><tr><td>00763571763650</td><td>Queso Feteado Felices Las Vacas Danbo A Base De Almendras 150 g</td></tr><tr><td>07790495003886</td><td>Salvado De Avena Yin Yang 500 g</td></tr><tr><td>00754697507884</td><td>Smoothie De Mango-Maracuya Felices Las Vacas 500 Ml</td></tr><tr><td>07798143230370</td><td>Stevia Jual 60 ml</td></tr><tr><td>07798143230271</td><td>Stevia Líquido Jual 250 ml</td></tr><tr><td>02763571670088</td><td>Tarta Epika Calabaza 320 g</td></tr><tr><td>01763571670071</td><td>Tarta Epika Espinaca 320 g</td></tr><tr><td>00656750729212</td><td>Toques Tikka Casa Vegana 420 g</td></tr><tr><td>07798200050019</td><td>Tostaditas Crackines De Arroz 120 g</td></tr><tr><td>07798104307707</td><td>Té Chaman Chai Inti Zen (2 g) 15 Unidades</td></tr><tr><td>07798003740261</td><td>Té Heredia Noche 20 Unidades</td></tr><tr><td>07798104308544</td><td>Té Inti Zen Dulce Manzanilla 15 Units</td></tr><tr><td>07798104307301</td><td>Té Inti Zen En Saquitos Vainilla Miel Y Cacao De Patagonia Bee 15 Un</td></tr><tr><td>07798104308568</td><td>Té Inti Zen Golden Chai 15 Un</td></tr><tr><td>07798104308551</td><td>Té Inti Zen Tres Mentas (30 g), 15 Unidades</td></tr><tr><td>07798008291218</td><td>Té Saint Gottard En Saquitos Té Verde 20 Unidades</td></tr><tr><td>07730241003654</td><td>Yerba Canarias 1 kg</td></tr><tr><td>07798073135547</td><td>Yerba Mate Hierbas Silvestres Blend n°2 Memorium 500 g</td></tr><tr><td>07798185200294</td><td>Yerba Mate Jesper Orgánica Con Hierbas Serranas 500 g</td></tr><tr><td>07798136870552</td><td>Yogur Dahi Firme Natural En Frasco 190 g</td></tr><tr><td>07798136870309</td><td>Yogur Dahi Vainilla Bebible 200 g</td></tr><tr><td>00763571663615</td><td>Yogur Felices Las Vacas De Almendras Y Vainilla 170 g</td></tr>
+    </tbody>
+  </table>
+</div>
 
 </body>
 </html>
