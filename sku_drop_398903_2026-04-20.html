@@ -1,29 +1,47 @@
-
 <html>
 <head>
 <meta charset="UTF-8">
 <style>
-body{font-family:Arial;padding:40px;}
-table{border-collapse:collapse;width:700px;}
-th{background:#eeeeee;padding:10px;text-align:left;}
-td{padding:8px;border-bottom:1px solid #ddd;}
+  body{font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding:40px; color:#333; line-height:1.5;}
+  .header{border-bottom:4px solid #e02b2b; padding-bottom:15px; margin-bottom:25px;}
+  .meta-container{display:flex; justify-content:space-between; background:#f8f9fa; padding:20px; border-radius:8px; margin-bottom:30px; border:1px solid #eee;}
+  table{border-collapse:collapse; width:100%; font-size:12px; margin-top:10px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);}
+  th{background:#333; color:white; padding:12px 10px; text-align:left;}
+  td{padding:10px; border:1px solid #eee;}
+  tr:nth-child(even){background:#fafafa;}
+  h3{color:#e02b2b; font-size:18px; margin-bottom:5px;}
+  .description{font-size:14px; color:#666; margin-bottom:20px;}
 </style>
 </head>
 <body>
 
+<div class="header">
+  <h1 style="margin:0;">Reporte de Recuperación de Catálogo</h1>
+  <p style="margin:5px 0 0 0; color:#666;">STANDARD_SKUS - <b>Estado: Caída de Productos Activos</b></p>
+</div>
 
-<p><b>Partner ID:</b> 398903</p>
-<p><b>Alert date:</b> 2026-04-20</p>
+<div class="meta-container">
+  <div>
+    <p><b>Partner ID:</b> 398903</p>
+    <p><b>Fecha de Alerta:</b> 2026-04-20</p>
+  </div>
+</div>
 
-<p>Estos son los productos que tuviste activos el mes pasado y hoy no tienes activos:</p>
-
-<table>
-<tr>
-<th>Barcode</th>
-<th>Product Name</th>
-</tr>
-<tr><td>02850300500001</td><td>Aguacate Hass Unidad</td></tr><tr><td>02850300427087</td><td>Cebolla Blanca 1 lb</td></tr><tr><td>02850300410034</td><td>Cebollino 100 g</td></tr><tr><td>02850300387084</td><td>Chile Jalape?o 1 lb</td></tr><tr><td>02850300376514</td><td>Cilantro Paquete 1 Unidad</td></tr><tr><td>02850300360001</td><td>Coliflor Unidad</td></tr><tr><td>02850300348085</td><td>Ejote Criollo 1 lb</td></tr><tr><td>02850300347088</td><td>Elote Amarillo 1 lb</td></tr><tr><td>02850300634010</td><td>Flor De Brocoli 1 kg</td></tr><tr><td>02850300319009</td><td>G?isquil Unidad</td></tr><tr><td>02850300700241</td><td>Jamaica 0.5 lb</td></tr><tr><td>02850301800070</td><td>Jilota 0.5 lb</td></tr><tr><td>02850300268000</td><td>Lim?n Persico Unidad</td></tr><tr><td>07443005460807</td><td>Manzana Mixta Empacada 4 unidades</td></tr><tr><td>02850300249085</td><td>Manzana Roja 1 lb</td></tr><tr><td>02850300232087</td><td>Manzana Verde Importadas 1 lb</td></tr><tr><td>02920300004721</td><td>Papa Chola Lavada Y Escogida Malla 2 Kg</td></tr><tr><td>02850300143000</td><td>Pepino Unidad</td></tr><tr><td>02850300113089</td><td>Pipian 1 lb</td></tr><tr><td>02850300115007</td><td>Pi?a Golden Unidad</td></tr><tr><td>02850300117001</td><td>Pi?a Hawaina Unidad</td></tr><tr><td>02850300100003</td><td>Pl?tano Seda Unidad</td></tr><tr><td>02850300085089</td><td>R?bano 1 lb</td></tr><tr><td>02850300054085</td><td>Tomate De Cocina 1 lb</td></tr><tr><td>02850301048045</td><td>Uva Roja 1 lb</td></tr><tr><td>02850300018087</td><td>Yuca Parafinada 1 lb</td></tr><tr><td>02850300016083</td><td>Zanahoria 1 lb</td></tr>
-</table>
+<div class="section">
+  <h3>Productos Detectados como Apagados</h3>
+  <p class="description">Identificamos que los siguientes productos estaban activos en tu catálogo y actualmente se encuentran desactivados. Te recomendamos reactivarlos para no perder ventas:</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Barcode</th>
+        <th>Nombre del Producto</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>02850300500001</td><td>Aguacate Hass Unidad</td></tr><tr><td>02890300000040</td><td>Ayote Indio Unidad</td></tr><tr><td>02850300427087</td><td>Cebolla Blanca 1 lb</td></tr><tr><td>02850300410034</td><td>Cebollino 100 g</td></tr><tr><td>02850300387084</td><td>Chile Jalapeño 1 lb</td></tr><tr><td>02850300389088</td><td>Chile Morron 1 lb</td></tr><tr><td>02900300001326</td><td>Chipilin Manojo</td></tr><tr><td>02850300376514</td><td>Cilantro Paquete 1 Unidad</td></tr><tr><td>02850300360001</td><td>Coliflor Unidad</td></tr><tr><td>02850300348085</td><td>Ejote Criollo 1 lb</td></tr><tr><td>02850300347088</td><td>Elote Amarillo 1 lb</td></tr><tr><td>02850300345008</td><td>Elote Unidad</td></tr><tr><td>02850300634010</td><td>Flor De Brocoli 1 kg</td></tr><tr><td>07801220004426</td><td>Fruta Congelada Green Detox Minuto Verde 500 G</td></tr><tr><td>02890300000187</td><td>Guayaba Importada 1 Bandeja</td></tr><tr><td>02850300319009</td><td>Güisquil Unidad</td></tr><tr><td>02850300314004</td><td>Hierbabuena Unidad</td></tr><tr><td>02850300700241</td><td>Jamaica 0.5 lb</td></tr><tr><td>02850301800070</td><td>Jilota 0.5 lb</td></tr><tr><td>02850300268000</td><td>Limón Persico Unidad</td></tr><tr><td>02850301798070</td><td>Loroco 0.5 lb</td></tr><tr><td>02950300000690</td><td>Mandarina 6UN</td></tr><tr><td>02850301797011</td><td>Mango Panades 1 Unidad</td></tr><tr><td>02900300002132</td><td>Mango Tomy 1 Unidad</td></tr><tr><td>02850301684717</td><td>Mango Verde 454 g</td></tr><tr><td>07443005460807</td><td>Manzana Mixta Empacada 4 unidades</td></tr><tr><td>02850300249085</td><td>Manzana Roja 1 lb</td></tr><tr><td>02850300232087</td><td>Manzana Verde Importadas 1 lb</td></tr><tr><td>02850300231080</td><td>Maracuyá 1 lb</td></tr><tr><td>02920300004721</td><td>Papa Chola Lavada Y Escogida Malla 2 Kg</td></tr><tr><td>02850300143000</td><td>Pepino Unidad</td></tr><tr><td>02850301802043</td><td>Perejil Liso 1 lb</td></tr><tr><td>02850300113089</td><td>Pipian 1 lb</td></tr><tr><td>02850300115007</td><td>Piña Golden Unidad</td></tr><tr><td>02850300117001</td><td>Piña Hawaina Unidad</td></tr><tr><td>02850300100003</td><td>Plátano Seda Unidad</td></tr><tr><td>02850300556008</td><td>Repollo Colorado Unidad</td></tr><tr><td>02850300081470</td><td>Repollo Morado Media Unidad</td></tr><tr><td>02850300085089</td><td>Rábano 1 lb</td></tr><tr><td>02850300054085</td><td>Tomate De Cocina 1 lb</td></tr><tr><td>02850301048045</td><td>Uva Roja 1 lb</td></tr><tr><td>02850300018087</td><td>Yuca Parafinada 1 lb</td></tr><tr><td>02850300016083</td><td>Zanahoria 1 lb</td></tr>
+    </tbody>
+  </table>
+</div>
 
 </body>
 </html>
