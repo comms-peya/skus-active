@@ -1,29 +1,47 @@
-
 <html>
 <head>
 <meta charset="UTF-8">
 <style>
-body{font-family:Arial;padding:40px;}
-table{border-collapse:collapse;width:700px;}
-th{background:#eeeeee;padding:10px;text-align:left;}
-td{padding:8px;border-bottom:1px solid #ddd;}
+  body{font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding:40px; color:#333; line-height:1.5;}
+  .header{border-bottom:4px solid #e02b2b; padding-bottom:15px; margin-bottom:25px;}
+  .meta-container{display:flex; justify-content:space-between; background:#f8f9fa; padding:20px; border-radius:8px; margin-bottom:30px; border:1px solid #eee;}
+  table{border-collapse:collapse; width:100%; font-size:12px; margin-top:10px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);}
+  th{background:#333; color:white; padding:12px 10px; text-align:left;}
+  td{padding:10px; border:1px solid #eee;}
+  tr:nth-child(even){background:#fafafa;}
+  h3{color:#e02b2b; font-size:18px; margin-bottom:5px;}
+  .description{font-size:14px; color:#666; margin-bottom:20px;}
 </style>
 </head>
 <body>
 
+<div class="header">
+  <h1 style="margin:0;">Reporte de Recuperación de Catálogo</h1>
+  <p style="margin:5px 0 0 0; color:#666;">STANDARD_SKUS - <b>Estado: Caída de Productos Activos</b></p>
+</div>
 
-<p><b>Partner ID:</b> 409599</p>
-<p><b>Alert date:</b> 2026-04-20</p>
+<div class="meta-container">
+  <div>
+    <p><b>Partner ID:</b> 409599</p>
+    <p><b>Fecha de Alerta:</b> 2026-04-20</p>
+  </div>
+</div>
 
-<p>Estos son los productos que tuviste activos el mes pasado y hoy no tienes activos:</p>
-
-<table>
-<tr>
-<th>Barcode</th>
-<th>Product Name</th>
-</tr>
-<tr><td></td><td>25% Off - Sobre De Dormir Infantil</td></tr><tr><td>04844651616151</td><td>Auricular Domi Entrada Lightning 1 Unidad</td></tr><tr><td>06969548211115</td><td>Auricular Tipo- C 1Un</td></tr><tr><td>06954201904152</td><td>Auriculares Cable Gen?rico 1 Unidad</td></tr><tr><td>06941347768137</td><td>Auriculares Con Cableado De Lightning-Black</td></tr><tr><td>07798033350300</td><td>Bandas Elasticas X100G</td></tr><tr><td>05697080698163</td><td>Bolsa De Papel Colores Pastel 1 Unidad</td></tr><tr><td>07804658370095</td><td>Bolsa De Regalo Grande Magicolor 1 Unidad</td></tr><tr><td>00006548562413</td><td>Brillantina C/Goma Verde</td></tr><tr><td>00000038785306</td><td>Cable Hdmi Comun</td></tr><tr><td></td><td>Cable Lightning-Usb</td></tr><tr><td>06932177473896</td><td>Calculadora Kenko 12 Digitos 1 Unidad</td></tr><tr><td></td><td>Cargador De Pared Usb C Compatible</td></tr><tr><td></td><td>Cargador De Pared Usb Original Charger</td></tr><tr><td>06956832070107</td><td>Carpeta A4 tapa transparente Dali</td></tr><tr><td>06930258101126</td><td>Cascola Blanca Dali 40g</td></tr><tr><td></td><td>Cuaderno Inteligente Caramel</td></tr><tr><td>06934274172405</td><td>Folio A4 X10</td></tr><tr><td>07556565665275</td><td>Forro de cuadernola varios colores</td></tr><tr><td>08426307291057</td><td>Marcador Blanco fino Plus office</td></tr><tr><td>07798100963846</td><td>Marcador Escolar Filgo Pinto Metalizado 8 Unidades</td></tr><tr><td>08000825542909</td><td>Mi Plasticina 12 Colores Caja Pax 1Un</td></tr><tr><td></td><td>Porta Esponja Para Canilla Blanco</td></tr><tr><td></td><td>Porta Esponja Para Canilla Gris</td></tr><tr><td></td><td>Porta Esponja Para Canilla Rosa</td></tr><tr><td></td><td>Porta Esponja Para Canilla Verde Pastel</td></tr><tr><td></td><td>Repuesto De Hojas Liso Para Cuaderno Inteligente A5</td></tr><tr><td>07800155261027</td><td>Set 5 Piezas Krea Ecol?gico De Fibra De Trigo Kids</td></tr><tr><td>00000078910737</td><td>Tempera Guache Acrilex 15 ml Verde</td></tr><tr><td>00000078910706</td><td>Tempera Guache Acrilex 15ml Amarillo</td></tr><tr><td>00000078910812</td><td>Tempera Guache Acrilex 15ml Azul</td></tr><tr><td>00000078910775</td><td>Tempera Guache Acrilex 15ml Marron</td></tr><tr><td>00000078910744</td><td>Tempera Guache Acrilex 15ml Naranja</td></tr><tr><td>00000078910768</td><td>Tempera Guache Acrilex 15ml Negro</td></tr><tr><td>00000078910713</td><td>Tempera Guache Acrilex 15ml Rojo</td></tr><tr><td>00000078910690</td><td>Tempera Guache Acrilex 15mml Celeste</td></tr><tr><td>00616859565739</td><td>Velas De Happy Birthday Topgrade Rosa 1 unidad</td></tr><tr><td>00418380352044</td><td>Velas Happy Birthday Happy Paper 1 Unidad</td></tr><tr><td>07798123971187</td><td>Vino Blanco Las Perdices Riesling 750 ml</td></tr><tr><td>07797205000043</td><td>Vino Tinto Finca La Anita Malbec 750 ml</td></tr><tr><td>07798113555670</td><td>Vino Tinto Finca La Anita Petit Verdot 750 ml</td></tr>
-</table>
+<div class="section">
+  <h3>Productos Detectados como Apagados</h3>
+  <p class="description">Identificamos que los siguientes productos estaban activos en tu catálogo y actualmente se encuentran desactivados. Te recomendamos reactivarlos para no perder ventas:</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Barcode</th>
+        <th>Nombre del Producto</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td></td><td>25% Off - Sobre De Dormir Infantil</td></tr><tr><td>04844651616151</td><td>Auricular Domi Entrada Lightning 1 Unidad</td></tr><tr><td>06969548211115</td><td>Auricular Tipo- C 1Un</td></tr><tr><td>06954201904152</td><td>Auriculares Cable Genérico 1 Unidad</td></tr><tr><td>06941347768137</td><td>Auriculares Con Cableado De Lightning-Black</td></tr><tr><td>07798033350300</td><td>Bandas Elasticas X100G</td></tr><tr><td></td><td>Block A5 Rayas Con Espiral</td></tr><tr><td>05697080698163</td><td>Bolsa De Papel Colores Pastel 1 Unidad</td></tr><tr><td>07804658370095</td><td>Bolsa De Regalo Grande Magicolor 1 Unidad</td></tr><tr><td>00006548562413</td><td>Brillantina C/Goma Verde</td></tr><tr><td>00000038785306</td><td>Cable Hdmi Comun</td></tr><tr><td></td><td>Cable Lightning-Usb</td></tr><tr><td>08002200102111</td><td>Café Molido 100% Arábica 250g</td></tr><tr><td>06932177473896</td><td>Calculadora Kenko 12 Digitos 1 Unidad</td></tr><tr><td></td><td>Cargador De Pared Usb C Compatible</td></tr><tr><td></td><td>Cargador De Pared Usb Original Charger</td></tr><tr><td>06956832070107</td><td>Carpeta A4 tapa transparente Dali</td></tr><tr><td>07730927600214</td><td>Carpeta oficio con elastico Dali</td></tr><tr><td>06930258101126</td><td>Cascola Blanca Dali 40g</td></tr><tr><td>06932033500056</td><td>Compas metalico con lapiz Dali</td></tr><tr><td>07895099707045</td><td>Cuaderno Inteligente A5 Negro 1 unidad</td></tr><tr><td></td><td>Cuaderno Inteligente Arcoã­Ris Pastel</td></tr><tr><td></td><td>Cuaderno Inteligente Caramel</td></tr><tr><td>06934274172405</td><td>Folio A4 X10</td></tr><tr><td>07556565665275</td><td>Forro de cuadernola varios colores</td></tr><tr><td>08426307291057</td><td>Marcador Blanco fino Plus office</td></tr><tr><td>07798100963846</td><td>Marcador Escolar Filgo Pinto Metalizado 8 Unidades</td></tr><tr><td>06956317453159</td><td>Marcador Permanente Color Blanco 1 Unidad</td></tr><tr><td>08000825542909</td><td>Mi Plasticina 12 Colores Caja Pax 1Un</td></tr><tr><td>00000063847239</td><td>Papel Contact Vinilo Transparente x Metro</td></tr><tr><td>07807210663284</td><td>Pincel N° 8 1 Un Artel</td></tr><tr><td></td><td>Planificador Semanal Para Cuaderno Inteligente</td></tr><tr><td></td><td>Porta Esponja Para Canilla Blanco</td></tr><tr><td></td><td>Porta Esponja Para Canilla Gris</td></tr><tr><td></td><td>Porta Esponja Para Canilla Rosa</td></tr><tr><td></td><td>Porta Esponja Para Canilla Verde Pastel</td></tr><tr><td>08426307071864</td><td>Regla Campus 20Cm 1 unidad</td></tr><tr><td></td><td>Repuesto De Hojas Liso Para Cuaderno Inteligente A5</td></tr><tr><td>07800155261027</td><td>Set 5 Piezas Krea Ecológico De Fibra De Trigo Kids</td></tr><tr><td>00000078910737</td><td>Tempera Guache Acrilex 15 ml Verde</td></tr><tr><td>00000078910706</td><td>Tempera Guache Acrilex 15ml Amarillo</td></tr><tr><td>00000078910812</td><td>Tempera Guache Acrilex 15ml Azul</td></tr><tr><td>00000078910775</td><td>Tempera Guache Acrilex 15ml Marron</td></tr><tr><td>00000078910744</td><td>Tempera Guache Acrilex 15ml Naranja</td></tr><tr><td>00000078910768</td><td>Tempera Guache Acrilex 15ml Negro</td></tr><tr><td>00000078910713</td><td>Tempera Guache Acrilex 15ml Rojo</td></tr><tr><td>00000078910690</td><td>Tempera Guache Acrilex 15mml Celeste</td></tr><tr><td>09582788301827</td><td>Tijera De Oficina Ofimak Acero Inoxidable</td></tr><tr><td>00616859565739</td><td>Velas De Happy Birthday Topgrade Rosa 1 unidad</td></tr><tr><td>00418380352044</td><td>Velas Happy Birthday Happy Paper 1 Unidad</td></tr><tr><td>07798123971187</td><td>Vino Blanco Las Perdices Riesling 750 ml</td></tr><tr><td>07797205000043</td><td>Vino Tinto Finca La Anita Malbec 750 ml</td></tr><tr><td>07798113555670</td><td>Vino Tinto Finca La Anita Petit Verdot 750 ml</td></tr>
+    </tbody>
+  </table>
+</div>
 
 </body>
 </html>
