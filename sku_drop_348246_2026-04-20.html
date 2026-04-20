@@ -1,29 +1,47 @@
-
 <html>
 <head>
 <meta charset="UTF-8">
 <style>
-body{font-family:Arial;padding:40px;}
-table{border-collapse:collapse;width:700px;}
-th{background:#eeeeee;padding:10px;text-align:left;}
-td{padding:8px;border-bottom:1px solid #ddd;}
+  body{font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding:40px; color:#333; line-height:1.5;}
+  .header{border-bottom:4px solid #e02b2b; padding-bottom:15px; margin-bottom:25px;}
+  .meta-container{display:flex; justify-content:space-between; background:#f8f9fa; padding:20px; border-radius:8px; margin-bottom:30px; border:1px solid #eee;}
+  table{border-collapse:collapse; width:100%; font-size:12px; margin-top:10px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);}
+  th{background:#333; color:white; padding:12px 10px; text-align:left;}
+  td{padding:10px; border:1px solid #eee;}
+  tr:nth-child(even){background:#fafafa;}
+  h3{color:#e02b2b; font-size:18px; margin-bottom:5px;}
+  .description{font-size:14px; color:#666; margin-bottom:20px;}
 </style>
 </head>
 <body>
 
+<div class="header">
+  <h1 style="margin:0;">Reporte de Recuperación de Catálogo</h1>
+  <p style="margin:5px 0 0 0; color:#666;">STANDARD_SKUS - <b>Estado: Caída de Productos Activos</b></p>
+</div>
 
-<p><b>Partner ID:</b> 348246</p>
-<p><b>Alert date:</b> 2026-04-20</p>
+<div class="meta-container">
+  <div>
+    <p><b>Partner ID:</b> 348246</p>
+    <p><b>Fecha de Alerta:</b> 2026-04-20</p>
+  </div>
+</div>
 
-<p>Estos son los productos que tuviste activos el mes pasado y hoy no tienes activos:</p>
-
-<table>
-<tr>
-<th>Barcode</th>
-<th>Product Name</th>
-</tr>
-<tr><td>07804651931910</td><td>Bebida Isot?nica Naranja Suerox 630 ml</td></tr><tr><td>07803501050337</td><td>Broxul Jarabe 120 Ml (Broxul, jengibre, miel) 120 mL</td></tr><tr><td>07803501003623</td><td>Broxul Jarabe Con Jenjibre Y Miel 120Ml</td></tr><tr><td>07800004002979</td><td>Dolorub 5% Gel X 45Gr Ibuprofeno</td></tr><tr><td>07804614931865</td><td>Finagrip Iphsa 10 Comprimidos</td></tr><tr><td>07702026147198</td><td>Tampones Con Aplicador Nosotras Super Plus 8Und</td></tr><tr><td>07800004399536</td><td>Tapsin Compuesto D?a 1 Unidad</td></tr><tr><td>07804918452028</td><td>Vaso Esterilizador</td></tr>
-</table>
+<div class="section">
+  <h3>Productos Detectados como Apagados</h3>
+  <p class="description">Identificamos que los siguientes productos estaban activos en tu catálogo y actualmente se encuentran desactivados. Te recomendamos reactivarlos para no perder ventas:</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Barcode</th>
+        <th>Nombre del Producto</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>07800063000312</td><td>Aerocamara Unidadiversal 1 Unidad</td></tr><tr><td>07801620004873</td><td>Agua Cachantun Mas Manzana 500 Ml</td></tr><tr><td>07800059002733</td><td>Aguala 0,75% Solucion Oral Para Gotas (Picosulfato Sodico) 10 mL</td></tr><tr><td>07804614931223</td><td>Algiasol Forte 200 Mg/5 Ml (Ibuprofeno) 100 mL</td></tr><tr><td>07800010000000</td><td>Alivio Artritis Synthon Celecoxib 200 Mg X 10 Unidades</td></tr><tr><td>07804620833580</td><td>Ambroxol Adulto X 100Ml</td></tr><tr><td>07800004001125</td><td>Antigripal Dia Tapsin 5 Gr</td></tr><tr><td>07800004001118</td><td>Antigripal Tapsin Noche 5 g</td></tr><tr><td>07800020187506</td><td>Anulette Cd Comprimidos Recubiertos (Etinilestradiol-Levonorgestrel) 28 capsules</td></tr><tr><td>07803504005808</td><td>Arnikaderm Gel Antiinflamatorio (Arnica Tm) 50 g</td></tr><tr><td>07803501004057</td><td>Beautip-D Sabor Blueberry. 30 Sobres</td></tr><tr><td>07801620005153</td><td>Bebida Isotónica Gatorade Frutas Tropicales 1 L</td></tr><tr><td>07804651931910</td><td>Bebida Isotónica Naranja Suerox 630 ml</td></tr><tr><td>07800004001781</td><td>Bioflora 250 Mg. Plv (Saccharomyces Boulardii) 10 unidades</td></tr><tr><td>00000069596315</td><td>Brontec jarabe hedera helix 35mg/5ml</td></tr><tr><td>07803501050337</td><td>Broxul Jarabe 120 Ml (Broxul, jengibre, miel) 120 mL</td></tr><tr><td>07803501003623</td><td>Broxul Jarabe Con Jenjibre Y Miel 120Ml</td></tr><tr><td>07801620004859</td><td>Cachantun Mas Bebida Botella Sin Gas Pera X 500 Ml</td></tr><tr><td>00310742006247</td><td>Calorub Forte Crema (Mentol-Salicilato De Metilo) 35 g</td></tr><tr><td>07800008001008</td><td>Casen Enema Solucion Frasco (Fosfato Disodico) 133 mL</td></tr><tr><td>07800008001015</td><td>Casen Infantil Enema (Fosfato De Sodio Monobasico Dihidrato) 66 mL</td></tr><tr><td>06910021007206</td><td>Cepillo De Dientes Colgate Premier Clean 1 Unidad</td></tr><tr><td>07805633020349</td><td>Cepillo Dental Family Set 2 Unidades</td></tr><tr><td>00000078005624</td><td>Chicle Big Time Menta Fresca 11 g</td></tr><tr><td>00000078068308</td><td>Chicles Bigtime Refrescante 11 g</td></tr><tr><td>07804945076136</td><td>Colonia Babyland Pink 210 ml</td></tr><tr><td>07804945076167</td><td>Colonia Celeste 210 Ml Babyland</td></tr><tr><td>00071603002098</td><td>Corta Uñas Metálico Para Manos Trim 1 Unidad</td></tr><tr><td>07800007143112</td><td>Crema Betametasona Laboratorio Chile 15 G</td></tr><tr><td>07506309840628</td><td>Crema Peinar Pantene Hidratación Extrema 300 ml</td></tr><tr><td>07800068011405</td><td>Dolcopin Gotas 15 Ml</td></tr><tr><td>07800004002979</td><td>Dolorub 5% Gel X 45Gr Ibuprofeno</td></tr><tr><td>07800004032853</td><td>Dolorub Capsico (Extracto De Capsico) 1 capsules</td></tr><tr><td>07800034524090</td><td>Dosin Alivio De Vómitos Y Nauseas Suspensión Oral Para Gotas 20 Ml</td></tr><tr><td>07702035430090</td><td>Enjuague Bucal Listerine Control Sarro 180 ml</td></tr><tr><td>07804614931865</td><td>Finagrip Iphsa 10 Comprimidos</td></tr><tr><td>07800068014703</td><td>Fisiolimp 0.9% Spray Nasal (Cloruro Sodio (Nasal)) 30 mL</td></tr><tr><td>00000050190256</td><td>Gaviscon Suspension Oral 10 mL (Bicarbonato De Sodio,Carbonato De Calcio,Sodio Alginato) 10 mL</td></tr><tr><td>07808718200346</td><td>Gel Arnica ANC 100Gr</td></tr><tr><td>07800007771353</td><td>Ibuprofeno 600 Mg (Ibuprofeno) 20 Cápsulas</td></tr><tr><td>07804920012166</td><td>Jabon Ballerina Yoghurt Arandano Doypack 750 ml</td></tr><tr><td>07803504404106</td><td>Jarabe Paltomiel Adulto (Eucaliptus-Palto-Anis) 200 mL</td></tr><tr><td>07800007144430</td><td>Lidocaina 4 % Gel (Lidocaina Clorhidrato) 15 g</td></tr><tr><td>07800006003561</td><td>Mamistop Leche Perros 125 Gr.</td></tr><tr><td>07800006003622</td><td>Mamistop Leche Perros 250 Gr.</td></tr><tr><td>07800004251247</td><td>Maver Dolorub X 60 G</td></tr><tr><td>07800063325422</td><td>Multivitaminico Fortotal Active + 30 Comprimdos</td></tr><tr><td>07800028210602</td><td>Nastizol Compositum Comprimidos Recubiertos (Pseudoefedrina Sulfato,Clorfenamina Maleato,Paracetamol) 10 capsules</td></tr><tr><td>07800041047605</td><td>Nastul Compuesto Comprimidos Recubiertos (Clorfenamina Maleato,Paracetamol,Pseudoefedrina Sulfato) 10 capsules</td></tr><tr><td>07800041047629</td><td>Nastul Compuesto Jarabe (Pseudoefedrina Sulfato,Clorfenamina Maleato,Paracetamol) 100 mL</td></tr><tr><td>07800063310848</td><td>Neohysticlar Desloratadina 5Mg X 30 Comp.</td></tr><tr><td>07800063130033</td><td>Noscapina 5 Mg/5 Ml Jarabe (Noscapina) 100 mL</td></tr><tr><td>07730956500080</td><td>Omega-3 Cápsulas Verus Biotech 30 Cáps</td></tr><tr><td>07804620833597</td><td>Opko Bromhexina Jarabe 4 Mg X 100 Ml</td></tr><tr><td>07805633012733</td><td>Parches Curitas Niños Diseños Surtidos 30 Un Family Set</td></tr><tr><td>07805633012849</td><td>Parches curitas niñas surtidos 30 un Family Set</td></tr><tr><td>07804900000541</td><td>Pasta Dental Aquafresh Triple Protección Sabor Menta 158 g</td></tr><tr><td>07806500793205</td><td>Pañal Babysec Premium M 24 Unidades</td></tr><tr><td>07806500794202</td><td>Pañal Premium G Babysec 20 Unidades</td></tr><tr><td>07806500799160</td><td>Pañal Premium M 20Un Babysec</td></tr><tr><td>07806500799153</td><td>Pañal Premium P 20 Un Babysec</td></tr><tr><td>07806500792208</td><td>Pañales De Bebe Premium Flexiprotect P 24Un Babysec</td></tr><tr><td>07800044002014</td><td>Polividona Yodada 10% 30ml - Laboratorio Valma</td></tr><tr><td>07804918450024</td><td>Preservativo De Latex Stimula 3 Unidades Laboratorios Prater S.A.</td></tr><tr><td>07804918450154</td><td>Preservativo Lifestyles Ultra Sensible Nuda 12 Unidades</td></tr><tr><td>07805633013891</td><td>Propoleo Spring Life Miel Caramelo</td></tr><tr><td>07795379200245</td><td>Propoleos Caramelos Natufarma 70 g</td></tr><tr><td>09002490235468</td><td>Red Bull Lata Energetica Sugar Free X 350 Ml</td></tr><tr><td>07800007804877</td><td>Red Off 0.0125% Solucion Oftamoligica (Nafazolina Clorhidrato) 15 mL</td></tr><tr><td>07809558101091</td><td>Sacarina Liquida 270 Ml Daily</td></tr><tr><td>07804629440529</td><td>Salbutamol 100Mcg. Inhalador Bucal 200 Dosis Lf (Salbutamol Sulfato) 1 unidad</td></tr><tr><td>07800063480022</td><td>Salbutamol Aerosol 100 Mcg./200 Dosis</td></tr><tr><td>07791293040714</td><td>Sedal Acondicionador Pureza Refrescante X 340 Ml</td></tr><tr><td>07804945024359</td><td>Set Cortauñas, Tijera Y Lima Nuby 1 Unidad</td></tr><tr><td>07804920007216</td><td>Shampoo Ballerina Detox Hierba 410 ml</td></tr><tr><td>07501006721133</td><td>Shampoo Pantene Restauración 400 ml</td></tr><tr><td>00310119033340</td><td>Solución Multipropósito Renu Fresh 355 ml</td></tr><tr><td>07809558101947</td><td>Stevia Líquida Daily 180 ml</td></tr><tr><td>07800044002045</td><td>Suplemento Valma Colageno Hidrolizado 60 Unidades</td></tr><tr><td>07702026147198</td><td>Tampones Con Aplicador Nosotras Super Plus 8Und</td></tr><tr><td>07800004399536</td><td>Tapsin Compuesto Día 1 Unidad</td></tr><tr><td>00000078039957</td><td>Tapsin X 6 Comprimidos Dia</td></tr><tr><td>07804640560473</td><td>Terbinafina 1% Crema Topica (Terbinafina Clorhidrato) 20 g</td></tr><tr><td>07805357001945</td><td>Test Embarazo Cassette BabyTest</td></tr><tr><td>07806500962809</td><td>Toalla Femenina Ladysoft Ultradelgada Nocturna Tela Malla 7 Unidades</td></tr><tr><td>07805750110435</td><td>Ungüento Protector Contra Coceduras Bepanthol 30 Grs</td></tr><tr><td>07804918452028</td><td>Vaso Esterilizador</td></tr><tr><td>07730698014852</td><td>Viadil 0,5% Solucion Oral Para Gotas (Pargeverina Clorhidrato) 15 mL</td></tr><tr><td>07800044001543</td><td>Vitamina C X 100 Unidades Valma</td></tr><tr><td>00737186550936</td><td>Vitamina k2+d3 softgel 60 cáp Fuente Vital</td></tr>
+    </tbody>
+  </table>
+</div>
 
 </body>
 </html>
